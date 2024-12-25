@@ -1,0 +1,58 @@
+/* General player styling */
+.rhap_container {
+    /* background-color: #333; */
+    background: linear-gradient(90deg,#4B0000 0%, rgba(0,0,0,1) 100%);
+    color: #fff;
+    border-radius: 8px;
+    opacity: 0.5;
+    padding: 10px;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Control button styling */
+  .rhap_button-clear {
+    color: #FFE5B4;
+  }
+  
+  .rhap_button-clear:hover {
+    color: #ff80ab;
+  }
+  
+  /* Progress bar styling */
+  .rhap_progress-bar {
+    background-color: #555;
+  }
+  
+  .rhap_progress-indicator {
+    background-color: #FFE5B4;
+  }
+  
+  .rhap_progress-filled {
+    background-color: #FFE5B4;
+  }
+  
+  /* Volume control styling */
+  .rhap_volume-container svg {
+    color: #FFE5B4;
+  }
+  
+  .rhap_volume-bar {
+    background-color: #777;
+  }
+  
+  .rhap_volume-indicator {
+    background-color: #FFE5B4;
+  }
+  
+  /* Time display */
+  .rhap_time {
+    font-size: 14px;
+    color: #ddd;
+  }
+  
+  /* Hover effect on control buttons */
+  .rhap_button-clear:hover {
+    filter: brightness(1.2);
+  }
+  

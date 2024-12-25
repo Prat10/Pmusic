@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import { useSelector } from 'react-redux';
 import './App.css';
-
+import { Allmusic } from './components/Allmusic';
+import NavBar from './components/Navbar/Navbar';
+import { Playlist } from './components/Playlist';
+import { User } from './components/User';
+import { MainMusicPlayer } from './components/musicplayer/MainMusicPlayer';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  const route = useSelector((state)=>state.Stage.route);
+  console.log(route)
+    return (
+    <div className="App mb-6">
+      <NavBar />
+      {route=="allmusic" ? <Allmusic /> : route == "playlist" ? <Playlist /> : route == "user" ? <User/> : route == "mainmusic" ? <MainMusicPlayer /> : <Allmusic />}
+     </div>
   );
 }
 
